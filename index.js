@@ -20,7 +20,10 @@ Do the following:
    HINT: no function required
 */
 
-
+let votingAge = 18;
+if (votingAge === 18) {
+  console.log(true);
+}
 
 /*
 Task 1b - Values
@@ -60,10 +63,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a,b) {
+  return a*b;
 }
-
+console.log(multiply(1,2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -76,10 +79,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age) {
+  var dogAge = 7*age;
+  console.log("Your doggo is " + dogAge + " years old in dog years!");
 }
 
+dogYears(5);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -109,9 +114,17 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(age, weight) {
+  if (age >= 1 && weight <= 5) {
+    return weight * .05;
+  } else if (age >= 1 && weight >= 6 && weight <= 10) {
+    return weight * .04;
+  } else if (age >= 1 && weight >= 11 && weight <= 15) {
+    return weight * .03;
+  } 
 }
+
+console.log(hungryDog(1,15));
 
 
 
@@ -153,9 +166,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  return kilometers * 0.621371;
 }
+
+console.log(miles(2));
 
 
 
@@ -167,9 +182,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm * 30.48;
 }
+console.log(feet(2));
 
 
 
@@ -203,10 +219,17 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+  if (score >= 90 && score <= 100) {
+    return "you got an A";
+} else if (score >=80 && score <= 89){
+  return "you got a B";
+} else if (score >=70 && score <= 79){
+  return 'you got a C';
+} else if (score >=60 && score <= 69){
+  return 'you got a D'
+} else return "you got an F"
 }
-
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
