@@ -152,7 +152,9 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+  if(user === computer){
+    return "it's a Tie!)"
+  } 
 }
 
 
@@ -204,7 +206,9 @@ Using the annoyingSong function below do the following:
 function annoyingSong(/*add your code here*/){
       /*add your code here*/
 }
-
+function annoyingSong(topNumber){
+  return topNumber + " bottles of soda on the wall " + topNumber + " of soda, take on down pass it around, " + (topNumber -1) + " bottles of soda on the wall"
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
