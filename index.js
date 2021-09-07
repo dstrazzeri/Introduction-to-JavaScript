@@ -50,8 +50,10 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+const myString = "1999";
+console.log(myString)
+myString = Number.parseInt(myString)
+console.log(myString);
 
 
 /*
