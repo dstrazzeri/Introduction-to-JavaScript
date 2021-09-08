@@ -87,8 +87,17 @@ function hungryDog(age, weight) {
     return weight * .04;
   } else if (age >= 1 && weight >= 11 && weight <= 15) {
     return weight * .03;
-  } 
+  } else if (age >= 1 && weight >= 15) {
+    return weight * .02;
+  } else if(age <=1 && weight >= .583){
+  return weight *.04;
+} else if (age < 0.583 && age >= 0.333){
+  return weight *.05;
+} else if(age < 0.33){
+  return weight * .1;
 }
+}
+
 console.log(hungryDog(1,15));
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 // Rock, Paper, Scissors - Let's play against the computer!
@@ -116,7 +125,7 @@ function game(user, computer) {
     computerInput = "scissors";
   }
   if (user === computer) {
-    return "its a tie";
+    return "it's a tie";
   }
   else if (user === "paper" && computer === "rock") {
     return "you win!";
