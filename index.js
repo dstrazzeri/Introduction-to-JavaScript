@@ -142,7 +142,7 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 function annoyingSong(topNumber){
-  return topNumber + " bottles of soda on the wall " + topNumber + " of soda, take on down pass it around, " + (topNumber -1) + " bottles of soda on the wall"
+  return topNumber + " bottles of soda on the wall, " + topNumber + " bottles of soda, take one down pass it around, " + (topNumber -1) + " bottles of soda on the wall"
 }
 console.log(annoyingSong(5));
 
