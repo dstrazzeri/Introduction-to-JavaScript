@@ -54,11 +54,11 @@ Do the following:
  2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
  3. Return the newly calculated age
 */
-function dogYears(age) {
-  var dogAge = 7*age;
-  console.log("Your doggo is " + dogAge + " years old in dog years!");
+function dogYears(humanYears) {
+  return 7 * humanYears
 }
-dogYears(5);
+  console.log(dogYears(5));
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 //Dog feeder - Depending on their weight and age, we need to know how many pounds of food to feed our dog each day!
 /*
@@ -105,9 +105,40 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-function game(user, computer){
-  /*add your code here*/
+let computerInput=Math.random();
+
+function game(user, computer) {
+  if (computerInput >= 0 && computerInput < 0.33) {
+    let computer = "rock";
+  } else if (computerInput > 0.33 && computerInput < 0.66) {
+    computerInput = "paper";
+  } else if (computerInput > 0.66) {
+    computerInput = "scissors";
+  }
+  if (user === computer) {
+    return "its a tie";
+  }
+  else if (user === "paper" && computer === "rock") {
+    return "you win!";
+  }
+  else if (user === "rock" && computer === "scissors") {
+    return "you win!";
+  }
+  else if (user === "scissors" && computer === "paper") {
+    return "you win!";
+  }
+  else if (user === "rock" && computer === "paper") {
+    return "you lose!"
+  }
+  else if (user === "scissors" && computer === "rock") {
+    return "you lose!"
+  }
+  else if (user === "paper" && computer === "scissors") {
+    return "you lose!"
+  }
 }
+console.log(game('paper','rock'));
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 //Metric Converter 
 //Task 5a - KM to Miles 
@@ -129,10 +160,11 @@ Using the feet function below do the following:
 2. Convert the number of cm to feet
 3. Return number of feet
 */
-function feet(cm){
-  return cm * 30.48;
+function feet(cm) {
+  return cm / 30.48;
 }
-console.log(feet(160));
+  console.log(feet(160));
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 // Let's Sing 99 Bottles of Soda on the Wall!
 /*
