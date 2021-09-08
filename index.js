@@ -178,7 +178,7 @@ Using the vowelCounter function below do the following:
 HINT - you may need to study tomorrow's content on arrays 
 HINT - try looking up the .includes() method
 */
-//function vowelCounter(/*add your code here*/) {
+function vowelCounter(/*add your code here*/) {
   /*add your code here*/
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
