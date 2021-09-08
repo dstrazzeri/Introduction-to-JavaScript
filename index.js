@@ -41,6 +41,7 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
+
 function multiply(a,b) {
   return a*b;
 }
@@ -80,25 +81,32 @@ Puppies less than 1 year
   
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
-function hungryDog(age, weight) {
-  if (age >= 1 && weight <= 5) {
-    return weight * .05;
-  } else if (age >= 1 && weight >= 6 && weight <= 10) {
-    return weight * .04;
-  } else if (age >= 1 && weight >= 11 && weight <= 15) {
-    return weight * .03;
-  } else if (age >= 1 && weight >= 15) {
-    return weight * .02;
-  } else if(age <=1 && weight >= .583){
-  return weight *.04;
-} else if (age < 0.583 && age >= 0.333){
-  return weight *.05;
-} else if(age < 0.33){
-  return weight * .1;
+function hungryDog(lbs,yrs){
+  if (yrs >= 1 && lbs <= 5){
+    return lbs * .05;
+  } 
+  else if(yrs >=1 && lbs >=6 && lbs <=10){ 
+    return lbs * .04;
+  }  
+  else if(yrs >= 1 && lbs >= 11 && lbs <=15){
+    return lbs * .03;
+  }
+  else if (yrs >= 1 && lbs >=15){
+    return lbs * .02;
+  }
+  else if(yrs <=1 && yrs >= 0.583){
+    return lbs * .04;
+  }
+  else if(yrs < 0.583 && yrs >= 0.333){
+    return lbs * .05;
+  }
+  else if(yrs < 0.333){
+    return lbs * .10;
+  }
 }
-}
+console.log(hungryDog(20,0.2));
 
-console.log(hungryDog(1,15));
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 // Rock, Paper, Scissors - Let's play against the computer!
 /*
