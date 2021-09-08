@@ -45,6 +45,7 @@ function multiply(a,b) {
   return a*b;
 }
 console.log(multiply(1,2));
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 //Age in Dog years
 /*
@@ -119,7 +120,8 @@ Using the miles function below do the following:
 function miles(kilometers){
   return kilometers * 0.621371;
 }
-console.log(miles(2));
+console.log(miles(10));
+
 //Task 5b - Feet to CM
 /*
 Using the feet function below do the following:
@@ -130,7 +132,7 @@ Using the feet function below do the following:
 function feet(cm){
   return cm * 30.48;
 }
-console.log(feet(2));
+console.log(feet(160));
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 // Let's Sing 99 Bottles of Soda on the Wall!
 /*
@@ -142,7 +144,7 @@ Using the annoyingSong function below do the following:
 function annoyingSong(topNumber){
   return topNumber + " bottles of soda on the wall " + topNumber + " of soda, take on down pass it around, " + (topNumber -1) + " bottles of soda on the wall"
 }
-console.log(annoyingSong(10));
+console.log(annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 //Grade Calculator
@@ -176,7 +178,7 @@ Using the vowelCounter function below do the following:
 HINT - you may need to study tomorrow's content on arrays 
 HINT - try looking up the .includes() method
 */
-function vowelCounter(/*add your code here*/) {
+//function vowelCounter(/*add your code here*/) {
   /*add your code here*/
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
